@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { useAtom } from 'jotai';
-import { themeAtom } from '../../store';
-import { Moon, Sun } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { cn } from '../../lib/utils';
 import data from '../../data.json';
 
 export function Navbar() {
-  const [theme, setTheme] = useAtom(themeAtom);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -17,10 +13,6 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
-
   return (
     <header 
       className={cn(
@@ -29,40 +21,25 @@ export function Navbar() {
       )}
       style={{
         padding: '1rem 2rem',
-        borderRadius: scrolled ? '0 0 24px 24px' : '0',
+        borderRadius: scrolled ? '0 0 32px 32px' : '0',
         borderTop: 'none',
         borderLeft: 'none',
         borderRight: 'none',
         margin: '0 auto',
-        maxWidth: scrolled ? '1200px' : '100%',
+        maxWidth: scrolled ? '1400px' : '100%',
         marginTop: scrolled ? '1rem' : '0'
       }}
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <a href="#" style={{ fontWeight: 700, fontSize: '1.25rem' }}>
+        <a href="#" style={{ fontWeight: 700, fontSize: '1.25rem', fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
           {data.personal.name.split(' ')[0]}<span style={{ color: 'var(--text-secondary)' }}>.</span>
         </a>
         
-        <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-          <a href="#about" style={{ fontWeight: 500 }}>About</a>
-          <a href="#projects" style={{ fontWeight: 500 }}>Projects</a>
-          <a href="#experience" style={{ fontWeight: 500 }}>Experience</a>
-          <button 
-            onClick={toggleTheme}
-            style={{ 
-              background: 'none', 
-              border: 'none', 
-              color: 'inherit', 
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '0.5rem',
-              borderRadius: '50%'
-            }}
-          >
-            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
+        <nav style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }}>
+          <a href="#about" style={{ fontWeight: 500, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>About</a>
+          <a href="#projects" style={{ fontWeight: 500, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Projects</a>
+          <a href="#experience" style={{ fontWeight: 500, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Experience</a>
+          <a href="#contact" className="btn btn-primary" style={{ padding: '0.5rem 1.5rem', fontSize: '0.875rem' }}>Hire Me</a>
         </nav>
       </div>
     </header>

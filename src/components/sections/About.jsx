@@ -20,8 +20,8 @@ export function About() {
         
         {/* Scrolling Ticker for Skills */}
         <motion.div 
-          className="glass bento-item"
-          style={{ gridColumn: 'span 12', padding: '3rem 0', overflow: 'hidden', display: 'flex', alignItems: 'center' }}
+          className="glass bento-item span-12"
+          style={{ padding: '3rem 0', overflow: 'hidden', display: 'flex', alignItems: 'center' }}
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -51,8 +51,8 @@ export function About() {
 
         {/* Location Bento */}
         <motion.div 
-          className="glass bento-item"
-          style={{ gridColumn: 'span 4', minHeight: '250px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}
+          className="glass bento-item span-4"
+          style={{ minHeight: '250px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -65,8 +65,8 @@ export function About() {
 
         {/* Languages Bento */}
         <motion.div 
-          className="glass bento-item"
-          style={{ gridColumn: 'span 4', minHeight: '250px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}
+          className="glass bento-item span-4"
+          style={{ minHeight: '250px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -79,8 +79,8 @@ export function About() {
 
         {/* Email Bento */}
         <motion.div 
-          className="glass bento-item"
-          style={{ gridColumn: 'span 4', minHeight: '250px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}
+          className="glass bento-item span-4"
+          style={{ minHeight: '250px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

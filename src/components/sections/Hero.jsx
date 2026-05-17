@@ -14,8 +14,8 @@ export function Hero() {
         
         {/* Main Intro Block */}
         <motion.div 
-          className="glass bento-item"
-          style={{ gridColumn: 'span 12', gridRow: 'span 2', minHeight: '400px' }}
+          className="glass bento-item span-12 row-span-2"
+          style={{ minHeight: '400px' }}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -36,8 +36,8 @@ export function Hero() {
 
         {/* Profile Image Block */}
         <motion.div 
-          className="bento-item"
-          style={{ gridColumn: 'span 4', gridRow: 'span 2', padding: 0, overflow: 'hidden', position: 'relative' }}
+          className="bento-item span-4 row-span-2"
+          style={{ padding: 0, overflow: 'hidden', position: 'relative' }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -55,8 +55,7 @@ export function Hero() {
 
         {/* Objective Block */}
         <motion.div 
-          className="glass bento-item"
-          style={{ gridColumn: 'span 8', gridRow: 'span 1' }}
+          className="glass bento-item span-8 row-span-1"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -68,21 +67,21 @@ export function Hero() {
 
         {/* CTAs Block */}
         <motion.div 
-          className="glass bento-item"
-          style={{ gridColumn: 'span 8', gridRow: 'span 1', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '2rem' }}
+          className="glass bento-item span-8 row-span-1 hero-buttons"
+          style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '2rem' }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <Magnetic strength={0.3}>
-            <Button href="#projects" variant="primary" style={{ padding: '1.5rem 3rem', fontSize: '1.2rem' }}>
-              View Work <ArrowRight size={24} />
+            <Button href="#projects" variant="primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem', whiteSpace: 'nowrap' }}>
+              View Work <ArrowRight size={20} />
             </Button>
           </Magnetic>
           
           <Magnetic strength={0.2}>
-            <Button href="/Sejal_Chaware_Resume.docx" variant="glass" download style={{ padding: '1.5rem 3rem', fontSize: '1.2rem' }}>
-              <FileText size={24} /> Resume
+            <Button href="/Sejal_Chaware_Resume.docx" variant="glass" download style={{ padding: '1rem 2rem', fontSize: '1.1rem', whiteSpace: 'nowrap' }}>
+              <FileText size={20} /> Resume
             </Button>
           </Magnetic>
         </motion.div>

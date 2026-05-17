@@ -1,0 +1,58 @@
+{
+  "personal": {
+    "name": "Sejal Rajesh Chaware",
+    "role": "Frontend Developer",
+    "phone": "+91 8080731845",
+    "email": "chawaresejal@gmail.com",
+    "location": "Nagpur, Maharashtra",
+    "linkedin": "https://www.linkedin.com/in/sejal-chaware-83b5b8258/",
+    "github": "https://github.com/SejalChaware/",
+    "dob": "07/11/2001",
+    "languages": ["English", "Hindi", "Marathi"],
+    "profileImage": "/profile.png"
+  },
+  "objective": "Motivated and detail-oriented Frontend Developer with hands-on experience in React.js, JavaScript, HTML, and CSS. Certified in MERN Stack Development, with a strong foundation in building responsive, user-friendly web interfaces. Eager to contribute to a dynamic team and grow through real-world, impactful projects.",
+  "skills": [
+    "React.js",
+    "JavaScript",
+    "HTML5 / CSS3",
+    "Python (Basic)",
+    "Git",
+    "Jotai",
+    "Framer Motion"
+  ],
+  "certifications": [
+    {
+      "title": "MERN Stack Developer — Full Course Certification",
+      "institute": "Seven Mentor Institute, Pune",
+      "duration": "6 Months",
+      "year": "2023",
+      "mode": "Offline",
+      "description": "Comprehensive training in MongoDB, Express.js, React.js, and Node.js. Worked on real-time projects covering REST APIs, component-based UI development, and state management. Gained practical experience in Git version control and deployment workflows."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Inventory Management System",
+      "technologies": ["React.js", "HTML", "CSS", "JavaScript"],
+      "description": "Designed and developed a responsive web-based inventory dashboard to track stock, products, and category-wise data. Implemented dynamic filtering, search functionality, and real-time quantity updates using React state management. Built a clean, modular component architecture following best practices for scalability and code reuse. Incorporated visual data indicators (low stock alerts, status badges) for enhanced operational visibility.",
+      "image": "/project1.png",
+      "link": "#"
+    },
+    {
+      "title": "Job Portal — Frontend UI",
+      "technologies": ["React.js", "CSS3", "HTML5", "JavaScript"],
+      "description": "Developed a fully responsive Job Portal frontend showcasing multi-page UI design including home, job listings, job detail, and application pages. Implemented dynamic job card components with filters for role, location, and experience using React hooks. Focused on pixel-perfect, mobile-first design with smooth navigation using React Router. Demonstrated strong UI/UX sensibility through consistent layout, typography hierarchy, and accessible color contrasts.",
+      "image": "/project2.png",
+      "link": "#"
+    }
+  ],
+  "education": [
+    {
+      "institution": "St. Vincent Pallotti College of Engineering & Technology, Nagpur",
+      "degree": "B.E. — Computer Science",
+      "year": "2019 – 2023",
+      "score": "CGPA: 7.62"
+    }
+  ]
+}

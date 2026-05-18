@@ -133,6 +133,7 @@ export function Hero() {
             <Button
               href={data.personal.resume}
               variant="glass"
+              target="_blank"
               style={{
                 padding: "1rem 2rem",
                 fontSize: "1.1rem",

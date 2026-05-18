@@ -9,7 +9,8 @@
     "github": "https://github.com/SejalChaware/",
     "dob": "07/11/2001",
     "languages": ["English", "Hindi", "Marathi"],
-    "profileImage": "/profile.png"
+    "profileImage": "/profile.png",
+    "resume": "/Sejal_Chaware_Resume.pdf"
   },
   "objective": "Motivated and detail-oriented Frontend Developer with hands-on experience in React.js, JavaScript, HTML, and CSS. Certified in MERN Stack Development, with a strong foundation in building responsive, user-friendly web interfaces. Eager to contribute to a dynamic team and grow through real-world, impactful projects.",
   "skills": [
